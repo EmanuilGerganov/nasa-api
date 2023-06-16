@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Michroma';
+  src: url('./Michroma-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat.ttf');
+}
+
+body {
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1a202c; /* Dark gray */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1a202c; /* Dark gray */
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply rounded bg-indigo-300
+  /* background-color: #805ad5; Purple */
+  /* border-radius: 4px; */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-indigo-500
+  /* background-color: #9f7aea; Light purple */
+}
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: #999 #333;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: #999;
+}
+.styled-scrollbars::-webkit-scrollbar-track {
+  /* Background */
+  background: #333;
+}
